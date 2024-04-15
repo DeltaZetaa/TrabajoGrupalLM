@@ -1,0 +1,103 @@
+body{
+    background-color: black;
+}
+ul{
+    list-style: none;
+}
+#contenedor{
+    background-color: aqua;
+    margin: -7px 0px 0px 9px;
+    width: 98vw;
+    height: 98vh;
+}
+/*-------------------------------------*/
+header{
+    background-color: rgb(48, 28, 28);
+    height: 14%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 360px;
+}
+header ul{
+    padding: 15px;
+    margin: -1px 12px 0px 0px;
+    display: flex;
+}
+header ul li{
+    padding: 0px 20px;
+}
+.ico-enlace{
+    width: 50px;
+}
+/*------------------------------------*/
+nav{
+    background-color: blueviolet;
+    height: 6% ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*------------------------------------*/
+.contenido{
+    display: flex;
+    height: 67%;
+}
+/*-------------------------------------*/
+section{
+    background-color: yellowgreen;
+    width: 70%;
+    height: 100%;
+}
+section header{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+}
+section article{
+    background-color: rgb(108, 90, 124);
+    width: 100%;
+    height: 30%;
+}
+section footer{
+    background-color: rgb(255, 135, 229);
+    width: 100%;
+    height: 30%;
+}
+/*-----------------------------------*/
+aside{
+    background-color: rgb(255, 211, 36);
+    width: 40%;
+
+}
+/*-----------------------------------*/
+footer{
+    background-color: tomato;
+    width: 100%;
+    height: 12%;
+}
+
+/*Navegador desplegable*/
+.nav li a{
+    background-color: rgb(73, 73, 190);
+    color:black;
+    text-decoration: none;
+    padding:10px 15px;
+    display:block;
+}
+.nav li a:hover{
+    background-color: rgb(8, 8, 240);
+}
+.nav > li{
+    float:left;
+}
+.nav li ul{
+    display: none;
+    position:absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul {
+    display: block;
+}
