@@ -76,7 +76,7 @@ header ul li{
 /*------------------------------------*/
 @media screen and (min-width:1299px) {
     #headersection {
-        background-color: red;
+        background-color: rgba(190, 49, 68, 1);
     }
     header p {
         height: 100%;
@@ -212,89 +212,19 @@ header ul li{
         font-size: 10px;
         color: purple;
     }
-    /*-------------noticias--------------*/
-
-       
-    .news{
-        color: red;
-        margin: 50px 50px;
-
-        display: block;
-        text-align: center;
-        font-size: 90px;
-        text-shadow: 0 0 20px gold;
+    .news h2{
+        padding-top: 1%;
+        font-size: 5em;
     }
     .card{
         position: relative;
-        width: 300px;
-        height: 350px;
+        width: 15vw;
+        height: 25vh;
         margin: 20px;
     }
-    .card .face{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-         /*indica como el contenido d un elemento debera ser redimensionado
-        para ajustarse al contenedor*/
-        border-radius: 10px;
-        overflow: hidden;
-        transition: 0.5s;
+    #footernoticias{
+        height: 5%;
     }
-    .card .front{
-        transform: perspective(600px) rotateY(0deg);
-        box-shadow: 0px 5px 10px snow;
-    }
-    .card .front img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .card .front h3{
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
-        height: 45px;
-        line-height: 45px;
-        color: snow;
-        background: yellow;
-        text-align: center;
-    }
-    .card .back{
-        transform: perspective(600px) rotateY(180deg);
-        background: purple;
-        padding: 15px;
-        color: snow;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        box-shadow: 0px 5px 10px snow;
-    }
-    .card .back .link{
-        border-top: 1px solid snow;
-        height: 50px;
-        line-height: 50px;
-    }
-    .card .back .link a{
-        color: snow;
-    }
-    .card .back h3{
-        font-size: 30px;
-        margin-top: 20px;
-        letter-spacing: 2px;
-    }   
-    .card .back p{
-        letter-spacing: 1px;
-    }
-    .card:hover .front{
-        transform: perspective(600px) rotateY(180deg);
-    }
-    .card:hover .back{
-        transform: perspective(600px) rotateY(360deg);
-    }
-    
     /*-----------------------------------*/
     #footergrande{
         background: linear-gradient(0deg, rgba(34,9,44,1) 43%, rgba(135,35,65,1) 100%, rgba(190,49,68,1) 100%);
@@ -402,7 +332,6 @@ header ul li{
         height: 100%;
     }
     section header{
-        background-color: black;
         width: 100%;
         height: 15%;
     }
@@ -448,6 +377,49 @@ header ul li{
         display: block; 
         margin: 0;
         padding-top:1% ; 
+    }
+    #headersection {
+        background-color: rgba(190, 49, 68, 1);
+    }
+    .card{
+        position: relative;
+        width: 15vw;
+        height: 22vh;
+        margin: 20px;
+    }
+    #footernoticias{
+        height: 5%;
+    }
+    .card .back h3{
+        font-size: 15px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    .card .back p{
+        letter-spacing: 1px;
+        font-size: 8px;
+        padding-top: 2px;
+    }
+    .card .back .link a{
+        color: snow;
+
+    }
+    .card .back .link{
+        border-top: 1px solid snow;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(255, 0, 0);
+        background: yellow;
+        text-align: center;
+        font-size: 10px;
     }
     /*-----------------------------------*/
 }
@@ -549,6 +521,9 @@ header ul li{
     aside{
         width: 0%;
     }
+    #headersection {
+        background-color: rgba(190, 49, 68, 1);
+    }
     /*------------------------------------*/
     .contenido{
         display: flex;
@@ -608,6 +583,130 @@ header ul li{
         margin: 0;
         padding-top:1% ; 
     }
+    .news h2{
+        padding-top: 1%;
+        font-size: 1.5em;
+    }
+    .card{
+        position: relative;
+        width: 100px;
+        height: 150px;
+        margin: 20px;
+    }
+    #footernoticias{
+        height: 10%;
+    }
+    .card .back h3{
+        font-size: 15px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    .card .back p{
+        letter-spacing: 1px;
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .card .back .link a{
+        color: snow;
+
+    }
+    .card .back .link{
+        border-top: 1px solid snow;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(255, 0, 0);
+        background: yellow;
+        text-align: center;
+        font-size: 10px;
+    }
     /*-----------------------------------*/
 }
 
+    /*-------------noticias--------------*/
+article{
+    display: flex;
+    flex-direction: column;
+}
+#fila1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#fila2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.news{
+    color: red;
+    display: block;
+    text-align: center;
+    text-shadow: 2px 2px 35px gold;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px snow;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: rgb(255, 0, 0);
+    background: yellow;
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: purple;
+    padding: 15px;
+    color: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px snow;
+}
+.card .back .link{
+    border-top: 1px solid snow;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+#section-noticias{
+    width: 100%;
+}
+
+#section-noticias article{
+    height: 80%;
+}
