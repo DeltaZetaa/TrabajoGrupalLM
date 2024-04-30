@@ -1,13 +1,12 @@
 @font-face {
     font-family: EDO;
-    src:url(font/edo.ttf);
+    src: url(font/edo.ttf);
 }
 *{
     margin: 0px;
     padding: 0px;           
 }
-
-body{
+body {
     background-color: black;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -17,30 +16,29 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
-ul{
+ul {
     list-style: none;
 }
 a {
     text-decoration: none;
 }
-#contenedor{
+#contenedor {
     margin: auto;
-    /* background-color: rgb(30, 219, 219); */
     width: 100vw;
     height: 100vh;
 }
 /*-------------------------------------*/
-#header_padre{
-    background: linear-gradient(180deg, rgba(34,9,44,1) 43%, rgba(135,35,65,1) 100%, rgba(190,49,68,1) 100%);
+#header_padre {
+    background: linear-gradient(180deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
     height: 14%;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.logo{
+.logo {
     width: 360px;
 }
-header ul{
+header ul {
     padding: 15px;
     margin: -1px 12px 0px 0px;
     display: grid;
@@ -50,25 +48,25 @@ header ul{
     color: #bb14ca;
     text-shadow: 5px 5px 11px rgb(0, 0, 0);
 }
-#logo1{
+#logo1 {
     grid-column: 1;
-    box-shadow: 0px 7px 77px -25px rgba(19,5,53,1);
-    background-color: rgba(19,5,53,0.110);
+    box-shadow: 0px 7px 77px -25px rgba(19, 5, 53, 1);
+    background-color: rgba(19, 5, 53, 0.110);
 }
-#logo2{
+#logo2 {
     grid-column: 2;
-    box-shadow: 0px 7px 77px -25px rgba(19,5,53,1);
-    background-color: rgba(19,5,53,0.110);
+    box-shadow: 0px 7px 77px -25px rgba(19, 5, 53, 1);
+    background-color: rgba(19, 5, 53, 0.110);
 }
-#logo3{
+#logo3 {
     grid-column: 3;
-    box-shadow: 0px 7px 77px -25px rgba(19,5,53,1);
-    background-color: rgba(19,5,53,0.110);
+    box-shadow: 0px 7px 77px -25px rgba(19, 5, 53, 1);
+    background-color: rgba(19, 5, 53, 0.110);
 }
-header ul li{
+header ul li {
     padding: 0px 25px;
 }
-.ico-enlace{
+.ico-enlace {
     width: 50px;
     margin: auto;
     display: flex;
@@ -76,7 +74,7 @@ header ul li{
 /*------------------------------------*/
 @media screen and (min-width:1299px) {
     #headersection {
-        background-color: rgba(190, 49, 68, 1);
+        background-color: red;
     }
     header p {
         height: 100%;
@@ -84,12 +82,12 @@ header ul li{
         margin: 0;
         font-family: EDO;
     }
-    #espacio{
+    #espacio {
         height: 5%;
     }
-    nav{
-        background: linear-gradient(180deg, rgba(34,9,44,1) 0%, rgba(135,35,65,1) 0%, rgba(190,49,68,1) 100%);
-        height: 5% ;
+    nav {
+        background: linear-gradient(180deg, rgba(34, 9, 44, 1) 0%, rgba(135, 35, 65, 1) 0%, rgba(190, 49, 68, 1) 100%);
+        height: 5%;
         width: 100%;
         position: absolute;
         font-family: EDO;
@@ -103,28 +101,25 @@ header ul li{
         text-align: center;
         padding: 0 10vw;
     }
-    .nav li a{
-        /* background-color: #DA7D7D; */
+    .nav li a {
         color: rgb(255, 158, 0);
         text-shadow: 1px 1px 4px rgb(255, 158, 0);
-        padding:10px 15px;
+        padding: 10px 15px;
         display: block;
         font-size: 22px;
         height: calc(100% - 20px);
         text-transform: uppercase;
-        /* transition: all 0.6s ease-in-out; */
         border-radius: 25px 25px 25px 25px;
     }
-    .nav a:hover{
+    .nav a:hover {
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-
-    .nav > li{
-        float:left;
+    .nav>li {
+        float: left;
         height: 100%;
         margin: 0 10px;
     }
-    .nav li ul{
+    .nav li ul {
         opacity: 0;
         visibility: hidden;
         min-width: 100%;
@@ -132,26 +127,26 @@ header ul li{
         top: 100%;
         transition: opacity 600ms, visibility 600ms;
     }
-    .nav li:hover > ul {
+    .nav li:hover>ul {
         visibility: visible;
         opacity: 1;
     }
-    #inicio a{
+    #inicio a {
         font-weight: 100;
         transition: 708ms;
     }
-    #sobrenosotros a{
+    #sobrenosotros a {
         border-radius: 25px 25px 0 0;
     }
     #sobrenosotros ul {
         width: inherit;
         padding: 0;
     }
-    #sobrenosotros ul li{
+    #sobrenosotros ul li {
         transition: all 0.6s ease-in-out;
-        background-color: rgba(190,49,68,1);
+        background-color: rgba(190, 49, 68, 1);
     }
-    #sobrenosotros ul li a{
+    #sobrenosotros ul li a {
         border-radius: 0;
     }
     @keyframes scale-up-center {
@@ -163,52 +158,48 @@ header ul li{
         }
     }
     /*------------------------------------*/
-    .contenido{
+    .contenido {
         display: flex;
         height: 74%;
     }
     /*-------------------------------------*/
-    section{
+    section {
         background-color: yellowgreen;
         width: 75%;
         height: 100%;
     }
-    section header{
+    section header {
         background-color: black;
         width: 100%;
         height: 15%;
     }
-    section article{
+    section article {
         background-color: rgb(108, 90, 124);
         width: 100%;
         height: 75%;
     }
-    section footer{
+    section footer {
         background-color: rgb(255, 135, 229);
         width: 100%;
         height: 10%;
     }
     /*-----------------------------------*/
-    aside{
+    aside {
         background-color: rgb(255, 211, 36);
         width: 25%;
         box-sizing: border-box;
         height: 100%;
         text-align: center;
-        
     }
-    #almacennoticias{
+    #almacennoticias {
         display: grid;
         width: 100%;
         height: calc(100% - 68px);
-        align-items: center;
-        
     }
-    .noticias{
+    .noticias {
         background-color: white;
-        /* height: 25%; */
         border: 1px solid #000;
-        margin: 5px 5px;
+        margin: 5px 0;
         font-size: 10px;
         color: purple;
     }
@@ -226,28 +217,28 @@ header ul li{
         height: 5%;
     }
     /*-----------------------------------*/
-    #footergrande{
-        background: linear-gradient(0deg, rgba(34,9,44,1) 43%, rgba(135,35,65,1) 100%, rgba(190,49,68,1) 100%);
+    #footergrande {
+        background: linear-gradient(0deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
         width: 100%;
         height: 6%;
     }
-    #textofooter{
+    #textofooter {
         font-family: EDO;
         color: rgb(255, 158, 0);
         font-size: 18px;
-        display: block; 
+        display: block;
         margin: 0;
-        padding-top:1% ; 
+        padding-top: 1%;
     }
     /*-----------------------------------*/
 }
 @media screen and (max-width:1299px) {
-    #espacio{
+    #espacio {
         height: 5%;
     }
-    nav{
-        background: linear-gradient(180deg, rgba(34,9,44,1) 0%, rgba(135,35,65,1) 0%, rgba(190,49,68,1) 100%);
-        height: 5% ;
+    nav {
+        background: linear-gradient(180deg, rgba(34, 9, 44, 1) 0%, rgba(135, 35, 65, 1) 0%, rgba(190, 49, 68, 1) 100%);
+        height: 5%;
         width: 100%;
         position: absolute;
         font-family: EDO;
@@ -259,30 +250,27 @@ header ul li{
         display: inline-block;
         box-sizing: border-box;
         text-align: center;
-        padding: 0 3vw; 
+        padding: 0 3vw;
     }
-    .nav li a{
-        /* background-color: #DA7D7D; */
+    .nav li a {
         color: rgb(255, 158, 0);
         text-shadow: 1px 1px 4px rgb(255, 158, 0);
-        padding:10px 15px;
+        padding: 10px 15px;
         display: block;
         font-size: 16px;
         height: calc(100% - 20px);
         text-transform: uppercase;
-        /* transition: all 0.6s ease-in-out; */
         border-radius: 25px 25px 25px 25px;
     }
-    .nav a:hover{
+    .nav a:hover {
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-
-    .nav > li{
-        float:left;
+    .nav>li {
+        float: left;
         height: 100%;
         margin: 0 10px;
     }
-    .nav li ul{
+    .nav li ul {
         opacity: 0;
         visibility: hidden;
         min-width: 100%;
@@ -290,26 +278,26 @@ header ul li{
         top: 100%;
         transition: opacity 600ms, visibility 600ms;
     }
-    .nav li:hover > ul {
+    .nav li:hover>ul {
         visibility: visible;
         opacity: 1;
     }
-    #inicio a{
+    #inicio a {
         font-weight: 100;
         transition: 708ms;
     }
-    #sobrenosotros a{
+    #sobrenosotros a {
         border-radius: 25px 25px 0 0;
     }
     #sobrenosotros ul {
         width: inherit;
         padding: 0;
     }
-    #sobrenosotros ul li{
+    #sobrenosotros ul li {
         transition: all 0.6s ease-in-out;
-        background-color: rgba(190,49,68,1);
+        background-color: rgba(190, 49, 68, 1);
     }
-    #sobrenosotros ul li a{
+    #sobrenosotros ul li a {
         border-radius: 0;
     }
     @keyframes scale-up-center {
@@ -321,62 +309,61 @@ header ul li{
         }
     }
     /*------------------------------------*/
-    .contenido{
+    .contenido {
         display: flex;
         height: 74%;
     }
     /*-------------------------------------*/
-    section{
+    section {
         background-color: yellowgreen;
         width: 75%;
         height: 100%;
     }
-    section header{
+    section header {
         width: 100%;
         height: 15%;
     }
-    section article{
+    section article {
         background-color: rgb(108, 90, 124);
         width: 100%;
         height: 75%;
     }
-    section footer{
+    section footer {
         background-color: rgb(255, 135, 229);
         width: 100%;
         height: 10%;
     }
     /*-----------------------------------*/
-    aside{
+    aside {
         background-color: rgb(255, 211, 36);
         width: 25%;
         box-sizing: border-box;
         height: 100%;
         text-align: center;
     }
-    #almacennoticias{
+    #almacennoticias {
         display: grid;
         width: 100%;
         height: calc(100% - 68px);
     }
-    .noticias{
+    .noticias {
         background-color: white;
-        /* height: 25%; */
         border: 1px solid #000;
         margin: 5px 0;
     }
     /*-----------------------------------*/
-    #footergrande{
-        background: linear-gradient(0deg, rgba(34,9,44,1) 43%, rgba(135,35,65,1) 100%, rgba(190,49,68,1) 100%);
+    #footergrande {
+        background: linear-gradient(0deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
         width: 100%;
         height: 6%;
     }
-    #textofooter{
+    #textofooter {
         font-family: EDO;
         color: rgb(255, 158, 0);
         font-size: 18px;
-        display: block; 
+        display: block;
         margin: 0;
-        padding-top:1% ; 
+        padding-top: 1%;
     }
     #headersection {
         background-color: rgba(190, 49, 68, 1);
@@ -402,7 +389,6 @@ header ul li{
     }
     .card .back .link a{
         color: snow;
-
     }
     .card .back .link{
         border-top: 1px solid snow;
@@ -424,26 +410,27 @@ header ul li{
     /*-----------------------------------*/
 }
 @media screen and (max-width:425px) {
-    .logo{
+    .logo {
         width: 170px;
         height: 65px;
     }
-    header ul li{
+    header ul li {
         padding: 0 3px;
     }
-    
-    .ico-enlace{
+    .ico-enlace {
         width: 25px;
     }
-    #espacio{
+    #espacio {
         height: 5%;
     }
-    #logo1, #logo2, #logo3{
+    #logo1,
+    #logo2,
+    #logo3 {
         font-size: 10px;
     }
-    nav{
-        background: linear-gradient(180deg, rgba(34,9,44,1) 0%, rgba(135,35,65,1) 0%, rgba(190,49,68,1) 100%);
-        height: 5% ;
+    nav {
+        background: linear-gradient(180deg, rgba(34, 9, 44, 1) 0%, rgba(135, 35, 65, 1) 0%, rgba(190, 49, 68, 1) 100%);
+        height: 5%;
         width: 100%;
         position: absolute;
         font-family: EDO;
@@ -455,10 +442,9 @@ header ul li{
         display: inline-block;
         box-sizing: border-box;
         text-align: center;
-        padding: 0 0vw; 
+        padding: 0 0vw;
     }
-    .nav li a{
-        /* background-color: #DA7D7D; */
+    .nav li a {
         color: rgb(255, 158, 0);
         text-shadow: 1px 1px 4px rgb(255, 158, 0);
         padding: 10px 7.5px;
@@ -466,18 +452,17 @@ header ul li{
         font-size: 10px;
         height: calc(100% - 20px);
         text-transform: uppercase;
-        /* transition: all 0.6s ease-in-out; */
         border-radius: 25px 25px 25px 25px;
     }
-    .nav a:hover{
+    .nav a:hover {
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-    .nav > li{
-        float:left;
+    .nav>li {
+        float: left;
         height: 100%;
         margin: 0;
     }
-    .nav li ul{
+    .nav li ul {
         opacity: 0;
         visibility: hidden;
         min-width: 100%;
@@ -485,26 +470,26 @@ header ul li{
         top: 100%;
         transition: opacity 600ms, visibility 600ms;
     }
-    .nav li:hover > ul {
+    .nav li:hover>ul {
         visibility: visible;
         opacity: 1;
     }
-    #inicio a{
+    #inicio a {
         font-weight: 100;
         transition: 708ms;
     }
-    #sobrenosotros a{
+    #sobrenosotros a {
         border-radius: 25px 25px 0 0;
     }
     #sobrenosotros ul {
         width: inherit;
         padding: 0;
     }
-    #sobrenosotros ul li{
+    #sobrenosotros ul li {
         transition: all 0.6s ease-in-out;
-        background-color: rgba(190,49,68,1);
+        background-color: rgba(190, 49, 68, 1);
     }
-    #sobrenosotros ul li a{
+    #sobrenosotros ul li a {
         border-radius: 0;
     }
     @keyframes scale-up-center {
@@ -518,39 +503,39 @@ header ul li{
     section {
         width: 100%;
     }
-    aside{
+    aside {
         width: 0%;
     }
     #headersection {
         background-color: rgba(190, 49, 68, 1);
     }
     /*------------------------------------*/
-    .contenido{
+    .contenido {
         display: flex;
         height: 74%;
     }
     /*-------------------------------------*/
-    section{
+    section {
         background-color: yellowgreen;
         width: 100%;
         height: 100%;
     }
-    section header{
+    section header {
         background-color: black;
         width: 100%;
         height: 10%;
     }
-    section article{
+    section article {
         background-color: rgb(108, 90, 124);
         width: 100%;
         height: 80%;
     }
-    section footer{
+    section footer {
         background-color: rgb(255, 135, 229);
         width: 100%;
         height: 10%;
     }
-    /*-----------------------------------*/
+    /*-------------------------------------*/
     aside{
         background-color: rgb(255, 211, 36);
         width: 0%;
@@ -565,23 +550,41 @@ header ul li{
     }
     .noticias{
         background-color: white;
+        border: 1px solid #000;
+        margin: 5px 0;
+    }
+    /*-----------------------------------*/
+    aside {
+        background-color: rgb(255, 211, 36);
+        width: 0%;
+        box-sizing: border-box;
+        height: 100%;
+        text-align: center;
+    }
+    #almacennoticias {
+        display: grid;
+        width: 100%;
+        height: calc(100% - 68px);
+    }
+    .noticias {
+        background-color: white;
         /* height: 25%; */
         border: 1px solid #000;
         margin: 5px 0;
     }
     /*-----------------------------------*/
-    #footergrande{
-        background: linear-gradient(0deg, rgba(34,9,44,1) 43%, rgba(135,35,65,1) 100%, rgba(190,49,68,1) 100%);
+    #footergrande {
+        background: linear-gradient(0deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
         width: 100%;
         height: 8%;
     }
-    #textofooter{
+    #textofooter {
         font-family: EDO;
         color: rgb(255, 158, 0);
         font-size: 15px;
-        display: block; 
+        display: block;
         margin: 0;
-        padding-top:1% ; 
+        padding-top: 1%;
     }
     .news h2{
         padding-top: 1%;
@@ -608,7 +611,6 @@ header ul li{
     }
     .card .back .link a{
         color: snow;
-
     }
     .card .back .link{
         border-top: 1px solid snow;
@@ -627,86 +629,119 @@ header ul li{
         text-align: center;
         font-size: 10px;
     }
-    /*-----------------------------------*/
 }
 
-    /*-------------noticias--------------*/
-article{
+/*-----------------------------------*/
+
+.biografia {
     display: flex;
-    flex-direction: column;
-}
-#fila1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#fila2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.news{
-    color: red;
-    display: block;
-    text-align: center;
-    text-shadow: 2px 2px 35px gold;
-}
-.card .face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.5s;
-}
-.card .front{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0px 5px 10px snow;
-}
-.card .front img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.card .front h3{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: rgb(255, 0, 0);
-    background: yellow;
-    text-align: center;
-}
-.card .back{
-    transform: perspective(600px) rotateY(180deg);
-    background: purple;
-    padding: 15px;
-    color: snow;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    box-shadow: 0px 5px 10px snow;
 }
-.card .back .link{
-    border-top: 1px solid snow;
-    height: 50px;
-    line-height: 50px;
+.biografia div {
+    flex: auto;
+    
 }
 
-.card:hover .front{
-    transform: perspective(600px) rotateY(180deg);
-}
-.card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
-}
-#section-noticias{
-    width: 100%;
-}
+.diablo {
+    margin-left: 20px;
+    
 
-#section-noticias article{
-    height: 80%;
 }
+.diablo img {
+    width: 40%;
+}
+.titulo{
+    font-size: 3.5em;
+}
+#mapa{
+    padding-left:  20%;
+    padding-bottom: 3px;}
+
+.textoLoca{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.QS{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+    /*-------------noticias--------------*/
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    #fila1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #fila2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .news{
+        color: red;
+        display: block;
+        text-align: center;
+        text-shadow: 2px 2px 35px gold;
+    }
+    .card .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .card .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0px 5px 10px snow;
+    }
+    .card .front img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(255, 0, 0);
+        background: yellow;
+        text-align: center;
+    }
+    .card .back{
+        transform: perspective(600px) rotateY(180deg);
+        background: purple;
+        padding: 15px;
+        color: snow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0px 5px 10px snow;
+    }
+    .card .back .link{
+        border-top: 1px solid snow;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+    #section-noticias{
+        width: 100%;
+    }
+    
+    #section-noticias article{
+        height: 80%;
+    }
