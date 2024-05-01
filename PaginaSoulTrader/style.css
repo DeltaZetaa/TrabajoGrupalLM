@@ -206,6 +206,7 @@ header ul li {
     .news h2{
         padding-top: 1%;
         font-size: 5em;
+        color: #000;
     }
     .card{
         position: relative;
@@ -589,6 +590,7 @@ header ul li {
     .news h2{
         padding-top: 1%;
         font-size: 1.5em;
+        color: #000;
     }
     .card{
         position: relative;
@@ -745,3 +747,355 @@ header ul li {
     #section-noticias article{
         height: 80%;
     }
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/*APARTADO DE CONTACTO//Realizado y docucomentado por Diego Ramirez Marco 1ºDAM Unir*/
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+
+.body-contacto {
+    background-color: #000;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.body-contacto hr {   
+    color: #600000;
+    border: 5px solid #600000;
+    border-radius: 100px;
+}
+
+.body-contacto .hr-pequeño {
+    color: #600000;
+    border: 1px solid #60000045;
+    border-radius: 100px;
+}
+
+.contenido-contacto {
+    display: block;
+    height: 74%;
+}
+
+.contenido-header {
+   
+    height: 15%;
+    display: block;
+}
+
+.header-contacto {
+
+    height: 100%;
+    text-align: center;
+    padding: 0px 250px;
+    backdrop-filter: blur(12px);
+    position: relative;
+    z-index: -1;
+
+}
+
+
+.header-contacto>h1 {
+    font-family: EDO;
+    margin: 0;
+}
+
+.header-contacto>p {
+    font-size: 0.7rem;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenido-section-aside {
+  
+    display: flex;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+
+}
+
+
+.contenido-section-aside fieldset {
+    border-radius: 30px;
+    padding: 30px;
+    margin: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.023);
+    border-bottom: 15px solid #600000;
+    border-top: 15px solid #bd0000;
+    background-color: rgba(255, 255, 255, 0.543);
+    backdrop-filter: blur(12px);
+}
+
+.contenido-section-aside legend {
+    text-align: center;
+    border: 15px solid #bd0000;
+    border-radius: 35px;
+    width: 300px;
+    padding: 15px;
+    background-color: #000;
+    font-family: EDO;
+    font-size: 1.9rem;
+    color: antiquewhite;
+}
+
+.contenido-section-aside label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.contenido-section-aside select {
+    display: flex;
+    border: NONE;
+    border-radius: 30px;
+    border-bottom: 3px solid rgb(164, 49, 49);
+    height: 30px;
+    width: 300px;
+}
+
+.contenido-section-aside textarea {
+
+    padding: 5px;
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(164, 49, 49);
+}
+
+.contenido-section-aside input {
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(164, 49, 49);
+}
+
+
+.contenido-section-aside input::placeholder {
+    color: #90909080;
+}
+
+
+option[value="1"] {
+    background-color: greenyellow;
+}
+
+option[value="2"] {
+    background-color: rgb(255, 255, 47);
+}
+
+option[value="3"] {
+    background-color: rgb(255, 172, 47);
+}
+
+option[value="4"] {
+    background-color: rgb(255, 47, 47);
+}
+
+.contenido-section-aside img {
+    width: 100px;
+    background-color: #00000000;
+}
+
+.contenido-section-aside button {
+    border: none;
+    background-color: transparent;
+}
+
+
+.section-contacto {
+    width: 50%;
+    height: 100%;
+}
+.aside-contacto {
+    width: 50%;
+    height: 100%;
+}
+
+.disclaimer {
+    background-color: #000;
+    color: white;
+    font-size: xx-small;
+    height: 5%;
+    padding: 5px;
+}
+
+
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/*APARTADO DE CONTACTO RESPONSIVE//Realizado y documentado por Diego Ramirez Marco 1ºDAM Unir*/
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+
+/*░░░░░░░Ipad Pro Horizontal░░░░░░░*/
+@media screen and (max-width:1367px) {
+
+    .header-contacto>p {
+        font-size: 1rem;
+    }
+}
+
+/*░░░░░░░Ipad Pro Vertical░░░░░░░*/
+@media screen and (max-width:1025px) {
+    .header-contacto>p {
+        font-size: 1rem;
+    }
+}
+
+/*░░░░░░░Samsung Galaxy S20 Ultra Vertical░░░░░░░*/
+@media screen and (max-width:448px) {
+
+    body {
+        position: fixed;
+    }
+
+    .contenido-section-aside fieldset {
+ 
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .contenido-section-aside {
+
+        flex-wrap: wrap;
+    }
+
+    .section-contacto,
+    .aside-contacto {
+
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 15px;
+    }
+
+    .contenido-section-aside legend {
+        width: 275px;
+    }
+
+    .body-contacto {
+        background-position: top;
+        background-size: auto;
+    }
+
+    .header-contacto {
+        padding: 10px 0;
+    }
+
+    .header-contacto>p {
+        font-size: 0.7rem;
+    }
+
+    .disclaimer {
+        font-size: 0.38rem;
+        padding: 4px;
+    }
+
+    #textofooter {
+        font-size: 15px;
+        padding: 2%;
+    }
+
+    #footergrande {
+        height: 7%;
+    }
+
+    header ul {
+        padding: 10px;
+        margin: -27px 0px 0px 0px;
+        display: flex;
+        width: 98%;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 206px;
+    }
+
+    #header_padre {
+        display: block;
+    }
+
+    .nav>li {
+        margin: 0px -5px;
+    }
+
+    .nav li a {
+        font-size: 12px;
+    }
+}
+
+/*░░░░░░░Samsung Galaxy S20 Ultra  Horizontal░░░░░░░*/
+@media screen and (max-width:920px) {
+
+    .logo {
+        width: 200px;
+    }
+
+    header ul {
+        padding: 0px;
+    }
+
+    header ul li {
+        padding: 5px 11px;
+    }
+
+    .ico-enlace {
+        width: 30px;
+    }
+    .nav {
+        padding: 0;
+    }
+
+    .nav li a {
+        padding: 0px 27px;
+        font-size: 16px;
+    }
+    .header-contacto>h1,
+    .header-contacto>p {
+        opacity: 0;
+    }
+
+    .contenido-header {
+        height: 0%;
+
+    }
+    .contenido-section-aside fieldset {
+        margin: 20px;
+    }
+
+    .contenido-section-aside {
+        height: 92%;
+    }
+
+    .contenido-contacto {
+        height: 73%;
+    }
+
+    #footergrande {
+        height: 10%;
+    }
+
+    #textofooter {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer {
+        font-size: 0.42rem;
+        padding: 5px;
+    }
+}
+#sectioncontacto{
+    background-color: transparent;
+}
+#asidecontacto{
+    background-color: transparent;
+}
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+#articlelocalizacion{
+    height: 85%;
+}
+#articlequienessomos{
+    height: 85%;
+}
