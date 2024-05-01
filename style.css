@@ -1,0 +1,1247 @@
+@font-face {
+    font-family: EDO;
+    src: url(font/edo.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;           
+}
+body {
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+#contenedor {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+/*-------------------------------------*/
+#header_padre {
+    background: linear-gradient(180deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
+    height: 14%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 360px;
+}
+header ul {
+    padding: 15px;
+    margin: -1px 12px 0px 0px;
+    display: grid;
+    width: 35%;
+    justify-content: end;
+    font-family: EDO;
+    color: #bb14ca;
+    text-shadow: 5px 5px 11px rgb(0, 0, 0);
+}
+#logo1 {
+    grid-column: 1;
+    box-shadow: 0px 7px 77px -25px rgba(19, 5, 53, 1);
+    background-color: rgba(19, 5, 53, 0.110);
+}
+#logo2 {
+    grid-column: 2;
+    box-shadow: 0px 7px 77px -25px rgba(19, 5, 53, 1);
+    background-color: rgba(19, 5, 53, 0.110);
+}
+#logo3 {
+    grid-column: 3;
+    box-shadow: 0px 7px 77px -25px rgba(19, 5, 53, 1);
+    background-color: rgba(19, 5, 53, 0.110);
+}
+header ul li {
+    padding: 0px 25px;
+}
+.ico-enlace {
+    width: 50px;
+    margin: auto;
+    display: flex;
+}
+/*------------------------------------*/
+@media screen and (min-width:1299px) {
+    #headersection {
+        background-color: red;
+    }
+    header p {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        font-family: EDO;
+    }
+    #espacio {
+        height: 5%;
+    }
+    nav {
+        background: linear-gradient(180deg, rgba(34, 9, 44, 1) 0%, rgba(135, 35, 65, 1) 0%, rgba(190, 49, 68, 1) 100%);
+        height: 5%;
+        width: 100%;
+        position: absolute;
+        font-family: EDO;
+    }
+    .nav {
+        height: 90%;
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 10vw;
+    }
+    .nav li a {
+        color: rgb(255, 158, 0);
+        text-shadow: 1px 1px 4px rgb(255, 158, 0);
+        padding: 10px 15px;
+        display: block;
+        font-size: 22px;
+        height: calc(100% - 20px);
+        text-transform: uppercase;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .nav a:hover {
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    .nav>li {
+        float: left;
+        height: 100%;
+        margin: 0 10px;
+    }
+    .nav li ul {
+        opacity: 0;
+        visibility: hidden;
+        min-width: 100%;
+        left: 0;
+        top: 100%;
+        transition: opacity 600ms, visibility 600ms;
+    }
+    .nav li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+    }
+    #inicio a {
+        font-weight: 100;
+        transition: 708ms;
+    }
+    #sobrenosotros a {
+        border-radius: 25px 25px 0 0;
+    }
+    #sobrenosotros ul {
+        width: inherit;
+        padding: 0;
+    }
+    #sobrenosotros ul li {
+        transition: all 0.6s ease-in-out;
+        background-color: rgba(190, 49, 68, 1);
+    }
+    #sobrenosotros ul li a {
+        border-radius: 0;
+    }
+    @keyframes scale-up-center {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.25);
+        }
+    }
+    /*------------------------------------*/
+    .contenido {
+        display: flex;
+        height: 74%;
+    }
+    /*-------------------------------------*/
+    section {
+        background-color: yellowgreen;
+        width: 75%;
+        height: 100%;
+    }
+    section header {
+        background-color: black;
+        width: 100%;
+        height: 15%;
+    }
+    section article {
+        background-color: rgb(108, 90, 124);
+        width: 100%;
+        height: 75%;
+    }
+    section footer {
+        background-color: rgb(255, 135, 229);
+        width: 100%;
+        height: 8.3%;
+    }
+    /*-----------------------------------*/
+    aside {
+        background-color: rgb(108, 90, 124);
+        width: 25%;
+        box-sizing: border-box;
+        height: 100%;
+        text-align: center;
+    }
+    #almacennoticias {
+        display: grid;
+        width: 100%;
+        height: calc(100% - 68px);
+        align-items: center;
+        justify-items: center;
+    }
+    .noticias {
+        background-color: white;
+        border: 1px solid #000;
+        margin: 5px 0;
+        font-size: 10px;
+        color: purple;
+    }
+    .news h2{
+        padding-top: 1%;
+        font-size: 5em;
+        color: #000;
+    }
+    .card{
+        position: relative;
+        width: 15vw;
+        height: 25vh;
+        margin: 20px;
+    }
+    #footernoticias{
+        height: 5%;
+    }
+    /*-----------------------------------*/
+    #footergrande {
+        background: linear-gradient(0deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
+        width: 100%;
+        height: 6%;
+    }
+    #textofooter {
+        font-family: EDO;
+        color: rgb(255, 158, 0);
+        font-size: 18px;
+        display: block;
+        margin: 0;
+        padding-top: 1%;
+    }
+    /*-----------------------------------*/
+}
+@media screen and (max-width:1299px) {
+    #espacio {
+        height: 5%;
+    }
+    nav {
+        background: linear-gradient(180deg, rgba(34, 9, 44, 1) 0%, rgba(135, 35, 65, 1) 0%, rgba(190, 49, 68, 1) 100%);
+        height: 5%;
+        width: 100%;
+        position: absolute;
+        font-family: EDO;
+    }
+    .nav {
+        height: 90%;
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 3vw;
+    }
+    .nav li a {
+        color: rgb(255, 158, 0);
+        text-shadow: 1px 1px 4px rgb(255, 158, 0);
+        padding: 10px 15px;
+        display: block;
+        font-size: 16px;
+        height: calc(100% - 20px);
+        text-transform: uppercase;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .nav a:hover {
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    .nav>li {
+        float: left;
+        height: 100%;
+        margin: 0 10px;
+    }
+    .nav li ul {
+        opacity: 0;
+        visibility: hidden;
+        min-width: 100%;
+        left: 0;
+        top: 100%;
+        transition: opacity 600ms, visibility 600ms;
+    }
+    .nav li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+    }
+    #inicio a {
+        font-weight: 100;
+        transition: 708ms;
+    }
+    #sobrenosotros a {
+        border-radius: 25px 25px 0 0;
+    }
+    #sobrenosotros ul {
+        width: inherit;
+        padding: 0;
+    }
+    #sobrenosotros ul li {
+        transition: all 0.6s ease-in-out;
+        background-color: rgba(190, 49, 68, 1);
+    }
+    #sobrenosotros ul li a {
+        border-radius: 0;
+    }
+    @keyframes scale-up-center {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.25);
+        }
+    }
+    /*------------------------------------*/
+    .contenido {
+        display: flex;
+        height: 74%;
+    }
+    /*-------------------------------------*/
+    section {
+        background-color: yellowgreen;
+        width: 75%;
+        height: 100%;
+    }
+    section header {
+        width: 100%;
+        height: 15%;
+    }
+    section article {
+        background-color: rgb(108, 90, 124);
+        width: 100%;
+        height: 75%;
+    }
+    section footer {
+        background-color: rgb(255, 135, 229);
+        width: 100%;
+        height: 8.3%;
+    }
+    /*-----------------------------------*/
+    aside {
+        background-color: rgb(108, 90, 124);
+        width: 25%;
+        box-sizing: border-box;
+        height: 100%;
+        text-align: center;
+    }
+    #almacennoticias {
+        display: grid;
+        width: 100%;
+        height: calc(100% - 68px);
+        align-items: center;
+        justify-items: center;
+    }
+    .noticias {
+        background-color: white;
+        border: 1px solid #000;
+        margin: 5px 0;
+    }
+    /*-----------------------------------*/
+    #footergrande {
+        background: linear-gradient(0deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
+        width: 100%;
+        height: 6%;
+    }
+    #textofooter {
+        font-family: EDO;
+        color: rgb(255, 158, 0);
+        font-size: 18px;
+        display: block;
+        margin: 0;
+        padding-top: 1%;
+    }
+    #headersection {
+        background-color: rgba(190, 49, 68, 1);
+    }
+    .card{
+        position: relative;
+        width: 15vw;
+        height: 22vh;
+        margin: 20px;
+    }
+    #footernoticias{
+        height: 5%;
+    }
+    .card .back h3{
+        font-size: 15px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    .card .back p{
+        letter-spacing: 1px;
+        font-size: 8px;
+        padding-top: 2px;
+    }
+    .card .back .link a{
+        color: snow;
+    }
+    .card .back .link{
+        border-top: 1px solid snow;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(255, 0, 0);
+        background: yellow;
+        text-align: center;
+        font-size: 10px;
+    }
+    /*-----------------------------------*/
+}
+@media screen and (max-width:425px) {
+    .logo {
+        width: 170px;
+        height: 65px;
+    }
+    header ul li {
+        padding: 0 3px;
+    }
+    .ico-enlace {
+        width: 25px;
+    }
+    #espacio {
+        height: 5%;
+    }
+    #logo1,
+    #logo2,
+    #logo3 {
+        font-size: 10px;
+    }
+    nav {
+        background: linear-gradient(180deg, rgba(34, 9, 44, 1) 0%, rgba(135, 35, 65, 1) 0%, rgba(190, 49, 68, 1) 100%);
+        height: 5%;
+        width: 100%;
+        position: absolute;
+        font-family: EDO;
+    }
+    .nav {
+        height: 90%;
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 0vw;
+    }
+    .nav li a {
+        color: rgb(255, 158, 0);
+        text-shadow: 1px 1px 4px rgb(255, 158, 0);
+        padding: 10px 7.5px;
+        display: block;
+        font-size: 10px;
+        height: calc(100% - 20px);
+        text-transform: uppercase;
+        border-radius: 25px 25px 25px 25px;
+    }
+    .nav a:hover {
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    .nav>li {
+        float: left;
+        height: 100%;
+        margin: 0;
+    }
+    .nav li ul {
+        opacity: 0;
+        visibility: hidden;
+        min-width: 100%;
+        left: 0;
+        top: 100%;
+        transition: opacity 600ms, visibility 600ms;
+    }
+    .nav li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+    }
+    #inicio a {
+        font-weight: 100;
+        transition: 708ms;
+    }
+    #sobrenosotros a {
+        border-radius: 25px 25px 0 0;
+    }
+    #sobrenosotros ul {
+        width: inherit;
+        padding: 0;
+    }
+    #sobrenosotros ul li {
+        transition: all 0.6s ease-in-out;
+        background-color: rgba(190, 49, 68, 1);
+    }
+    #sobrenosotros ul li a {
+        border-radius: 0;
+    }
+    @keyframes scale-up-center {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.25);
+        }
+    }
+    section {
+        width: 100%;
+    }
+    aside {
+        width: 0%;
+    }
+    #headersection {
+        background-color: rgba(190, 49, 68, 1);
+    }
+    /*------------------------------------*/
+    .contenido {
+        display: flex;
+        height: 74%;
+    }
+    /*-------------------------------------*/
+    section {
+        background-color: yellowgreen;
+        width: 100%;
+        height: 100%;
+    }
+    section header {
+        background-color: black;
+        width: 100%;
+        height: 10%;
+    }
+    section article {
+        background-color: rgb(108, 90, 124);
+        width: 100%;
+        height: 80%;
+    }
+    section footer {
+        background-color: rgb(255, 135, 229);
+        width: 100%;
+        height: 8.3%;
+    }
+    /*-------------------------------------*/
+    aside{
+        background-color: rgb(108, 90, 124);
+        width: 0%;
+        box-sizing: border-box;
+        height: 100%;
+        text-align: center;
+    }
+    #almacennoticias{
+        display: grid;
+        width: 100%;
+        height: calc(100% - 68px);
+        align-items: center;
+        justify-items: center;
+    }
+    .noticias{
+        background-color: white;
+        border: 1px solid #000;
+        margin: 5px 0;
+    }
+    /*-----------------------------------*/
+    aside {
+        background-color: rgb(108, 90, 124);
+        width: 0%;
+        box-sizing: border-box;
+        height: 100%;
+        text-align: center;
+    }
+    #almacennoticias {
+        display: grid;
+        width: 100%;
+        height: calc(100% - 68px);
+        align-items: center;
+        justify-items: center;
+    }
+    .noticias {
+        background-color: white;
+        /* height: 25%; */
+        border: 1px solid #000;
+        margin: 5px 0;
+    }
+    /*-----------------------------------*/
+    #footergrande {
+        background: linear-gradient(0deg, rgba(34, 9, 44, 1) 43%, rgba(135, 35, 65, 1) 100%, rgba(190, 49, 68, 1) 100%);
+        width: 100%;
+        height: 8%;
+    }
+    #textofooter {
+        font-family: EDO;
+        color: rgb(255, 158, 0);
+        font-size: 15px;
+        display: block;
+        margin: 0;
+        padding-top: 1%;
+    }
+    .news h2{
+        padding-top: 1%;
+        font-size: 1.5em;
+        color: #000;
+    }
+    .card{
+        position: relative;
+        width: 100px;
+        height: 150px;
+        margin: 20px;
+    }
+    #footernoticias{
+        height: 10%;
+    }
+    .card .back h3{
+        font-size: 15px;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+    .card .back p{
+        letter-spacing: 1px;
+        font-size: 6px;
+        padding-top: 2px;
+    }
+    .card .back .link a{
+        color: snow;
+    }
+    .card .back .link{
+        border-top: 1px solid snow;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(255, 0, 0);
+        background: yellow;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+/*-----------------------------------*/
+
+.biografia {
+    display: flex;
+    justify-content: space-between;
+}
+.biografia div {
+    flex: auto;
+    
+}
+
+.diablo {
+    margin-left: 20px;
+    
+
+}
+.diablo img {
+    width: 40%;
+}
+.titulo{
+    font-size: 3.5em;
+}
+#mapa{
+    padding-left:  20%;
+    padding-bottom: 3px;}
+
+.textoLoca{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.QS{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+    /*-------------noticias--------------*/
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    #fila1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #fila2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .news{
+        color: red;
+        display: block;
+        text-align: center;
+        text-shadow: 2px 2px 35px gold;
+    }
+    .card .face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .card .front{
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0px 5px 10px snow;
+    }
+    .card .front img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card .front h3{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: rgb(255, 0, 0);
+        background: yellow;
+        text-align: center;
+    }
+    .card .back{
+        transform: perspective(600px) rotateY(180deg);
+        background: purple;
+        padding: 15px;
+        color: snow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0px 5px 10px snow;
+    }
+    .card .back .link{
+        border-top: 1px solid snow;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .card:hover .front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .card:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+    #section-noticias{
+        width: 100%;
+    }
+    
+    #section-noticias article{
+        height: 80%;
+    }
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/*APARTADO DE CONTACTO//Realizado y docucomentado por Diego Ramirez Marco 1ºDAM Unir*/
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+
+.body-contacto {
+    background-color: #000;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.body-contacto hr {   
+    color: #600000;
+    border: 5px solid #600000;
+    border-radius: 100px;
+}
+
+.body-contacto .hr-pequeño {
+    color: #600000;
+    border: 1px solid #60000045;
+    border-radius: 100px;
+}
+
+.contenido-contacto {
+    display: block;
+    height: 74%;
+}
+
+.contenido-header {
+   
+    height: 15%;
+    display: block;
+}
+
+.header-contacto {
+
+    height: 100%;
+    text-align: center;
+    padding: 0px 250px;
+    backdrop-filter: blur(12px);
+    position: relative;
+    z-index: -1;
+
+}
+
+
+.header-contacto>h1 {
+    font-family: EDO;
+    margin: 0;
+}
+
+.header-contacto>p {
+    font-size: 0.7rem;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenido-section-aside {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+
+.contenido-section-aside fieldset {
+    border-radius: 30px;
+    padding: 30px;
+    margin: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.023);
+    border-bottom: 15px solid #600000;
+    border-top: 15px solid #bd0000;
+    background-color: rgba(255, 255, 255, 0.543);
+    backdrop-filter: blur(12px);
+}
+
+.contenido-section-aside legend {
+    text-align: center;
+    border: 15px solid #bd0000;
+    border-radius: 35px;
+    width: 300px;
+    padding: 15px;
+    background-color: #000;
+    font-family: EDO;
+    font-size: 1.9rem;
+    color: antiquewhite;
+}
+
+.contenido-section-aside label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+.contenido-section-aside select {
+    display: flex;
+    border: NONE;
+    border-radius: 30px;
+    border-bottom: 3px solid rgb(164, 49, 49);
+    height: 30px;
+    width: 300px;
+}
+
+.contenido-section-aside textarea {
+
+    padding: 5px;
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(164, 49, 49);
+}
+
+.contenido-section-aside input {
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    border-bottom: 3px solid rgb(164, 49, 49);
+}
+
+
+.contenido-section-aside input::placeholder {
+    color: #90909080;
+}
+
+
+option[value="1"] {
+    background-color: greenyellow;
+}
+
+option[value="2"] {
+    background-color: rgb(255, 255, 47);
+}
+
+option[value="3"] {
+    background-color: rgb(255, 172, 47);
+}
+
+option[value="4"] {
+    background-color: rgb(255, 47, 47);
+}
+
+.contenido-section-aside img {
+    width: 100px;
+    background-color: #00000000;
+}
+
+.contenido-section-aside button {
+    border: none;
+    background-color: transparent;
+}
+
+
+.section-contacto {
+    width: 50%;
+    height: 100%;
+}
+.aside-contacto {
+    width: 50%;
+    height: 100%;
+}
+
+.disclaimer {
+    background-color: #000;
+    color: white;
+    font-size: xx-small;
+    height: 5%;
+    padding: 5px;
+}
+
+
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/*APARTADO DE CONTACTO RESPONSIVE//Realizado y documentado por Diego Ramirez Marco 1ºDAM Unir*/
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+
+/*░░░░░░░Ipad Pro Horizontal░░░░░░░*/
+@media screen and (max-width:1367px) {
+
+    .header-contacto>p {
+        font-size: 1rem;
+    }
+}
+
+/*░░░░░░░Ipad Pro Vertical░░░░░░░*/
+@media screen and (max-width:1025px) {
+    .header-contacto>p {
+        font-size: 1rem;
+    }
+}
+
+/*░░░░░░░Samsung Galaxy S20 Ultra Vertical░░░░░░░*/
+@media screen and (max-width:448px) {
+
+    body {
+        position: fixed;
+    }
+
+    .contenido-section-aside fieldset {
+ 
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .contenido-section-aside {
+
+        flex-wrap: wrap;
+    }
+
+    .section-contacto,
+    .aside-contacto {
+
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 15px;
+    }
+
+    .contenido-section-aside legend {
+        width: 275px;
+    }
+
+    .body-contacto {
+        background-position: top;
+        background-size: auto;
+    }
+
+    .header-contacto {
+        padding: 10px 0;
+    }
+
+    .header-contacto>p {
+        font-size: 0.7rem;
+    }
+
+    .disclaimer {
+        font-size: 0.38rem;
+        padding: 4px;
+    }
+
+    #textofooter {
+        font-size: 15px;
+        padding: 2%;
+    }
+
+    #footergrande {
+        height: 7%;
+    }
+
+    header ul {
+        padding: 10px;
+        margin: -27px 0px 0px 0px;
+        display: flex;
+        width: 98%;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 206px;
+    }
+
+    #header_padre {
+        display: block;
+    }
+
+    .nav>li {
+        margin: 0px -5px;
+    }
+
+    .nav li a {
+        font-size: 12px;
+    }
+}
+
+/*░░░░░░░Samsung Galaxy S20 Ultra  Horizontal░░░░░░░*/
+@media screen and (max-width:920px) {
+
+    .logo {
+        width: 200px;
+    }
+
+    header ul {
+        padding: 0px;
+    }
+
+    header ul li {
+        padding: 5px 11px;
+    }
+
+    .ico-enlace {
+        width: 30px;
+    }
+    .nav {
+        padding: 0;
+    }
+
+    .nav li a {
+        padding: 0px 27px;
+        font-size: 16px;
+    }
+    .header-contacto>h1,
+    .header-contacto>p {
+        opacity: 0;
+    }
+
+    .contenido-header {
+        height: 0%;
+
+    }
+    .contenido-section-aside fieldset {
+        margin: 20px;
+    }
+
+    .contenido-section-aside {
+        height: 92%;
+    }
+
+    .contenido-contacto {
+        height: 73%;
+    }
+
+    #footergrande {
+        height: 10%;
+    }
+
+    #textofooter {
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer {
+        font-size: 0.42rem;
+        padding: 5px;
+    }
+}
+#sectioncontacto{
+    background-color: transparent;
+}
+#asidecontacto{
+    background-color: transparent;
+    border: 0;
+}
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+/*▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄*/
+#articlelocalizacion{
+    height: 85%;
+}
+#articlequienessomos{
+    height: 85%;
+}
+#contenedorarticledivs{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+article{
+    align-items: center;
+}
+.soul-offer img{ 
+    width: 200px;
+}
+.soul-offer{
+    text-align: center;
+}
+#noticiaindex img{
+    position: relative;
+}
+#headersection {
+    font-family: EDO;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1%;
+}
+aside{
+    border-left: 2px solid #000000;
+}
+.wrapper .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.carta{
+    width: 100px;
+    height: 250px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: 0.6s cubic-bezier(.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.carta>.row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carta>.row>.icon{
+    background-color: #223;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.carta>.row>.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 250px;
+    width: 400px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: 0.3s;
+    transition: all .3s ease;
+}
+
+.description p{
+    color: rgb(rgb(240, 75, 75), rgb(84, 255, 84), rgb(67, 67, 233));
+    padding-top: 2px;
+    text-align: left;
+}
+
+.description h3{
+    text-transform: uppercase;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+width: 600px;
+}
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.carta[for="c1"]{
+    background-image: url(img/Adquisicion\ Almas.jpg);
+}
+.carta[for="c2"]{
+    background-image: url(img/Desarrollo.jpg);
+}
+.carta[for="c3"]{
+    background-image: url(img/Venta.jpg);
+}
+.carta[for="c4"]{
+    background-image: url(img/postventa.jpg);
+}
+.carta[for="c5"]{
+    background-image: url(img/legal.jpg);
+}
+.carta[for="c6"]{
+    background-image: url(img/investigacion.jpg);
+}
+#section-actuaciones{
+    width: 100%;
+}
+
+#section-actuaciones article{
+    height: 80%;
+}
